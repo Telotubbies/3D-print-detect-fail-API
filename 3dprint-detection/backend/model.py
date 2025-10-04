@@ -6,11 +6,15 @@ from pathlib import Path
 
 import torch
 from ultralytics.nn.tasks import DetectionModel
-torch.serialization.add_safe_globals([DetectionModel])
+torch.serialization.add_safe_globals([torch.nn.modules.container.Sequential])
 
 from ultralytics import YOLO
 from backend.config import MODEL_PATH, CONF_THRESHOLD, RESULT_DIR
 
+torch.serialization.add_safe_globals([torch.nn.modules.container.Sequential])
+torch.serialization.add_safe_globals([torch.nn.Module])
+torch.serialization.add_safe_globals([YOLO.__class__])
+MODEL_PATH = "backend/best.pt"
 model = YOLO(MODEL_PATH)
 
 def detect(image_bytes: bytes, card_id: str, out_dir: Path):

@@ -1,21 +1,19 @@
-version: "3.9"
+# File: docker-compose.yml
+
+version: '3.8'
 
 services:
-  backend:
-    build: ./backend
-    container_name: print-backend
+  app:
+    # สั่งให้ build จาก Dockerfile ที่อยู่ใน directory ปัจจุบัน (root)
+    build: .
+    container_name: 3d-print-app
+    ports:
+      # เชื่อม port 80 ของเครื่องคอมพิวเตอร์เรา กับ port 8000 ของ container
+      # ทำให้เราสามารถเข้าเว็บผ่าน http://localhost ได้เลย
+      - "80:8000"
     volumes:
-      - ./uploads:/app/uploads
-      - ./results:/app/results
-      - ./backend/database.db:/app/backend/database.db
-      - ./backend/best.pt:/app/backend/best.pt
-    ports:
-      - "8000:8000"
-    restart: unless-stopped
-
-  frontend:
-    build: ./frontend
-    container_name: print-frontend
-    ports:
-      - "8080:80"
+      # Mount โค้ดทั้งหมดในปัจจุบันเข้าไปใน /app ของ container
+      # เพื่อให้เมื่อเราแก้ไขโค้ด การเปลี่ยนแปลงจะสะท้อนใน container ทันที (เหมาะสำหรับตอนพัฒนา)
+      - .:/app
+    # กำหนดให้ container restart ตัวเองเสมอ ยกเว้นเราจะสั่งหยุดเอง
     restart: unless-stopped
