@@ -1,0 +1,16 @@
+body {
+  /*height: 100vh;*/
+  overflow: auto;
+}
+
+#sidebar {
+  width: 250px;
+  min-height: 100vh;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;        /* ยืดตามสัดส่วนจริง */
+  object-fit: contain; /* ไม่ครอป */
+  max-height: none;    /* ยกเลิก limit */
+}

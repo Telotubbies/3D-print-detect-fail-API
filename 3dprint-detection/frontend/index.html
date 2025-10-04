@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Print Detection</title>
+  <link href="/static/vendor/bootstrap.min.css" rel="stylesheet" />
+  <link href="/static/assets/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div class="bg-light border-end p-3" id="sidebar" style="min-width:240px">
+      <button id="uploadBtn" class="btn btn-primary w-100 mb-3">+ Upload Image</button>
+      <input type="file" id="fileInput" class="d-none" accept="image/png, image/jpeg" />
+
+      <button id="genKeyBtn" class="btn btn-secondary w-100 mb-2">Generate Key</button>
+
+      <div class="input-group mb-3">
+        <input type="text" id="apiKeyInput" class="form-control" placeholder="API Key (optional)" />
+        <button id="clearKeyBtn" class="btn btn-outline-secondary" type="button">Clear</button>
+      </div>
+
+      <!-- Replace URL (ซ่อนตอนเริ่ม; app.js จะเปิดเมื่อมี card_id) -->
+      <div class="mb-2 d-none">
+        <label class="form-label mb-1">Replace URL (POST)</label>
+        <input id="replaceUrl" class="form-control" readonly title="Click to copy" />
+        <small class="text-muted">
+          ใช้ POST อัปโหลดภาพแทนที่ (ส่งคีย์ใน header <code>x-api-key</code> อย่าใส่คีย์ใน URL)
+        </small>
+      </div>
+
+      <!-- ปุ่ม Copy cURL -->
+      <div class="mb-3">
+        <button id="copyCurlBtn" class="btn btn-outline-secondary w-100" disabled>Copy cURL</button>
+      </div>
+
+      <small class="text-muted">
+        Tip: ถ้ามีคีย์ ระบบจะอัปเดตการ์ดเดิม 1 ครั้งแล้วล้างคีย์อัตโนมัติ
+      </small>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 p-3">
+      <div class="row" id="cardContainer">
+        <!-- Cards จะถูก inject ด้วย JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/vendor/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/app.js?v=2"></script> <!-- bump version กัน cache -->
+</body>
+</html>

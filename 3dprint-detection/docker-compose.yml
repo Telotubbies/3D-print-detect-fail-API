@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: print-backend
+    volumes:
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+      - ./backend/database.db:/app/backend/database.db
+      - ./backend/best.pt:/app/backend/best.pt
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: print-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
