@@ -41,9 +41,9 @@ def detect(image_bytes: bytes, card_id: str, out_dir: Path):
 
         # สีแดงสำหรับ spaghetti (2), สีเขียวสำหรับ normal (0)
         color = (0, 0, 255) if cls_id == 2 else (0, 255, 0)
-        cv2.rectangle(img, (xyxy[0], xyxy[1]), (xyxy[2], xyxy[3]), color, 2)
+        cv2.rectangle(img, (xyxy[0], xyxy[1]), (xyxy[2], xyxy[3]), color, 3)
         cv2.putText(img, f"{label} {conf:.2f}", (xyxy[0], xyxy[1]-5),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
     # ตัดสินสถานะ
     if scores.get("spaghetti", 0.0) >= CONF_THRESHOLD:

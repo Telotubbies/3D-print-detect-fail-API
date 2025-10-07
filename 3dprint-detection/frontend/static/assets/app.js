@@ -74,27 +74,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ---------- Build cURL ----------
-  function buildCurlCommand(apiKey, cardId) {
-    // เปลี่ยน /path/to/file.jpg เป็น path จริงก่อนรัน
-    const fileArg = '"/path/to/file.jpg"';
-    const base = location.origin;
+function buildCurlCommand(apiKey, cardId) {
+  const fileArg = '"/path/to/file.jpg"';
+  const base = location.origin;
 
-    if (cardId) {
-      // แบบมี card_id ใน path
-      return [
-        `curl -X POST "${base}/cards/${encodeURIComponent(cardId)}/replace"`,
-        `-H "x-api-key: ${apiKey}"`,
-        `-F "image=@${fileArg}"`
-        // ,`-H "x-callback-url: https://your.app/webhook"` // (ถ้าต้องการ callback)
-      ].join(" \\\n  ");
-    }
-    // fallback: ไม่มี card_id → ให้ backend map จากคีย์
-    return [
-      `curl -X POST "${base}/cards/replace"`,
-      `-H "x-api-key: ${apiKey}"`,
-      `-F "image=@${fileArg}"`
-    ].join(" \\\n  ");
+  if (cardId) {
+    return `curl -X POST "${base}/cards/${encodeURIComponent(cardId)}/replace" -H "x-api-key: ${apiKey}" -F "image=@${fileArg}"`;
   }
+
+  return `curl -X POST "${base}/cards/replace" -H "x-api-key: ${apiKey}" -F "image=@${fileArg}"`;
+}
+
 
   // ปุ่ม Copy cURL อีกครั้ง (optional)
   if (copyCurlBtn) {
