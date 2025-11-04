@@ -1,0 +1,5 @@
+[console_scripts]
+api_web = ai_3dprint.api_web:main
+detection = ai_3dprint.detection:main
+test = ai_3dprint.test:main
+three_d_print = ai_3dprint.three_d_print:main

@@ -1,0 +1,28 @@
+[1.196s] Invoking command in '/home/knn/Fram_3D_printer/src/ai_3dprint': PYTHONPATH=/home/knn/Fram_3D_printer/build/ai_3dprint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ai_3dprint build --build-base /home/knn/Fram_3D_printer/build/ai_3dprint/build install --record /home/knn/Fram_3D_printer/build/ai_3dprint/install.log --single-version-externally-managed install_data
+[1.544s] running egg_info
+[1.569s] writing ../../build/ai_3dprint/ai_3dprint.egg-info/PKG-INFO
+[1.569s] writing dependency_links to ../../build/ai_3dprint/ai_3dprint.egg-info/dependency_links.txt
+[1.575s] writing entry points to ../../build/ai_3dprint/ai_3dprint.egg-info/entry_points.txt
+[1.582s] writing requirements to ../../build/ai_3dprint/ai_3dprint.egg-info/requires.txt
+[1.583s] writing top-level names to ../../build/ai_3dprint/ai_3dprint.egg-info/top_level.txt
+[1.637s] reading manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'
+[1.638s] adding license file 'LICENSE'
+[1.639s] writing manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'
+[1.639s] running build
+[1.639s] running build_py
+[1.639s] copying ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint
+[1.640s] running install
+[1.649s] running install_lib
+[1.674s] copying /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint
+[1.675s] byte-compiling /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint/api_web.py to api_web.cpython-312.pyc
+[1.676s] running install_data
+[1.677s] running install_egg_info
+[1.703s] removing '/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info' (and everything under it)
+[1.704s] Copying ../../build/ai_3dprint/ai_3dprint.egg-info to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info
+[1.705s] running install_scripts
+[1.881s] Installing api_web script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+[1.881s] Installing detection script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+[1.887s] Installing test script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+[1.888s] Installing three_d_print script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+[1.895s] writing list of installed files to '/home/knn/Fram_3D_printer/build/ai_3dprint/install.log'
+[1.983s] Invoked command in '/home/knn/Fram_3D_printer/src/ai_3dprint' returned '0': PYTHONPATH=/home/knn/Fram_3D_printer/build/ai_3dprint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ai_3dprint build --build-base /home/knn/Fram_3D_printer/build/ai_3dprint/build install --record /home/knn/Fram_3D_printer/build/ai_3dprint/install.log --single-version-externally-managed install_data

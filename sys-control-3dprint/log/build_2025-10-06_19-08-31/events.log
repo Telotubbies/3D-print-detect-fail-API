@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000300] (ai_3dprint) JobQueued: {'identifier': 'ai_3dprint', 'dependencies': OrderedDict()}
+[0.000746] (ai_3dprint) JobStarted: {'identifier': 'ai_3dprint'}
+[0.099693] (-) TimerEvent: {}
+[0.200006] (-) TimerEvent: {}
+[0.300259] (-) TimerEvent: {}
+[0.400526] (-) TimerEvent: {}
+[0.500896] (-) TimerEvent: {}
+[0.601160] (-) TimerEvent: {}
+[0.701394] (-) TimerEvent: {}
+[0.801722] (-) TimerEvent: {}
+[0.902007] (-) TimerEvent: {}
+[1.002254] (-) TimerEvent: {}
+[1.102480] (-) TimerEvent: {}
+[1.202708] (-) TimerEvent: {}
+[1.302934] (-) TimerEvent: {}
+[1.403187] (-) TimerEvent: {}
+[1.503495] (-) TimerEvent: {}
+[1.603758] (-) TimerEvent: {}
+[1.683130] (ai_3dprint) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ai_3dprint', 'build', '--build-base', '/home/knn/Fram_3D_printer/build/ai_3dprint/build', 'install', '--record', '/home/knn/Fram_3D_printer/build/ai_3dprint/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/knn/Fram_3D_printer/src/ai_3dprint', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'knn', 'SSH_CLIENT': '192.168.145.52 51817 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/knn', 'OLDPWD': '/home/knn', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/knn/Fram_3D_printer/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'knn', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/home/knn/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/knn/Fram_3D_printer/install/ai_3dprint:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/knn/Fram_3D_printer/build/ai_3dprint', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.145.52 51817 192.168.145.103 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/knn/Fram_3D_printer/build/ai_3dprint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages:/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.703855] (-) TimerEvent: {}
+[1.804164] (-) TimerEvent: {}
+[1.904468] (-) TimerEvent: {}
+[2.004726] (-) TimerEvent: {}
+[2.040062] (ai_3dprint) StdoutLine: {'line': b'running egg_info\n'}
+[2.064889] (ai_3dprint) StdoutLine: {'line': b'writing ../../build/ai_3dprint/ai_3dprint.egg-info/PKG-INFO\n'}
+[2.071155] (ai_3dprint) StdoutLine: {'line': b'writing dependency_links to ../../build/ai_3dprint/ai_3dprint.egg-info/dependency_links.txt\n'}
+[2.072199] (ai_3dprint) StdoutLine: {'line': b'writing entry points to ../../build/ai_3dprint/ai_3dprint.egg-info/entry_points.txt\n'}
+[2.072921] (ai_3dprint) StdoutLine: {'line': b'writing requirements to ../../build/ai_3dprint/ai_3dprint.egg-info/requires.txt\n'}
+[2.073681] (ai_3dprint) StdoutLine: {'line': b'writing top-level names to ../../build/ai_3dprint/ai_3dprint.egg-info/top_level.txt\n'}
+[2.104799] (-) TimerEvent: {}
+[2.127899] (ai_3dprint) StdoutLine: {'line': b"reading manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'\n"}
+[2.129816] (ai_3dprint) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.130617] (ai_3dprint) StdoutLine: {'line': b"writing manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'\n"}
+[2.130823] (ai_3dprint) StdoutLine: {'line': b'running build\n'}
+[2.130948] (ai_3dprint) StdoutLine: {'line': b'running build_py\n'}
+[2.132770] (ai_3dprint) StdoutLine: {'line': b'copying ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint\n'}
+[2.133184] (ai_3dprint) StdoutLine: {'line': b'running install\n'}
+[2.142674] (ai_3dprint) StdoutLine: {'line': b'running install_lib\n'}
+[2.174733] (ai_3dprint) StdoutLine: {'line': b'copying /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint\n'}
+[2.175963] (ai_3dprint) StdoutLine: {'line': b'byte-compiling /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint/api_web.py to api_web.cpython-312.pyc\n'}
+[2.177607] (ai_3dprint) StdoutLine: {'line': b'running install_data\n'}
+[2.180680] (ai_3dprint) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.204870] (-) TimerEvent: {}
+[2.209854] (ai_3dprint) StdoutLine: {'line': b"removing '/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[2.210301] (ai_3dprint) StdoutLine: {'line': b'Copying ../../build/ai_3dprint/ai_3dprint.egg-info to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info\n'}
+[2.217351] (ai_3dprint) StdoutLine: {'line': b'running install_scripts\n'}
+[2.304973] (-) TimerEvent: {}
+[2.395243] (ai_3dprint) StdoutLine: {'line': b'Installing api_web script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint\n'}
+[2.401316] (ai_3dprint) StdoutLine: {'line': b'Installing detection script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint\n'}
+[2.402610] (ai_3dprint) StdoutLine: {'line': b'Installing test script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint\n'}
+[2.403771] (ai_3dprint) StdoutLine: {'line': b'Installing three_d_print script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint\n'}
+[2.405030] (-) TimerEvent: {}
+[2.407098] (ai_3dprint) StdoutLine: {'line': b"writing list of installed files to '/home/knn/Fram_3D_printer/build/ai_3dprint/install.log'\n"}
+[2.498790] (ai_3dprint) CommandEnded: {'returncode': 0}
+[2.505106] (-) TimerEvent: {}
+[2.545112] (ai_3dprint) JobEnded: {'identifier': 'ai_3dprint', 'rc': 0}
+[2.546256] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+source;share/ai_3dprint/hook/pythonpath.ps1
+source;share/ai_3dprint/hook/pythonpath.dsv
+source;share/ai_3dprint/hook/pythonpath.sh
+source;share/ai_3dprint/hook/ament_prefix_path.ps1
+source;share/ai_3dprint/hook/ament_prefix_path.dsv
+source;share/ai_3dprint/hook/ament_prefix_path.sh

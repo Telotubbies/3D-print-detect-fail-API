@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/ai_3dprint/ai_3dprint.egg-info/PKG-INFO
+writing dependency_links to ../../build/ai_3dprint/ai_3dprint.egg-info/dependency_links.txt
+writing entry points to ../../build/ai_3dprint/ai_3dprint.egg-info/entry_points.txt
+writing requirements to ../../build/ai_3dprint/ai_3dprint.egg-info/requires.txt
+writing top-level names to ../../build/ai_3dprint/ai_3dprint.egg-info/top_level.txt
+reading manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ai_3dprint/ai_3dprint.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ai_3dprint/three_d_print.py -> /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint
+copying ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint
+running install
+running install_lib
+copying /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint/three_d_print.py -> /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint
+copying /home/knn/Fram_3D_printer/build/ai_3dprint/build/lib/ai_3dprint/api_web.py -> /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint
+byte-compiling /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint/three_d_print.py to three_d_print.cpython-312.pyc
+byte-compiling /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint/api_web.py to api_web.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ai_3dprint/ai_3dprint.egg-info to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/python3.12/site-packages/ai_3dprint-0.0.0-py3.12.egg-info
+running install_scripts
+Installing api_web script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+Installing detection script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+Installing test script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+Installing three_d_print script to /home/knn/Fram_3D_printer/install/ai_3dprint/lib/ai_3dprint
+writing list of installed files to '/home/knn/Fram_3D_printer/build/ai_3dprint/install.log'
